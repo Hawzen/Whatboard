@@ -1,0 +1,18 @@
+/* https://www.color-hex.com/color/ddffdc */
+.jumbo {
+	background-color: #DDFFDC; /* DDFFDC */
+}
+
+.jumbo-light {
+	background-color: #EFFBEE;
+}
+
+
+body {
+	background-color: #F3FFF2; 
+}
+
+.export {
+	display:inherit;
+	background:inherit;
+}
