@@ -8,4 +8,4 @@ app.layout = dashboard.layout
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=4200)
+    app.run_server()
