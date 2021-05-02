@@ -7,12 +7,14 @@ crntPath = os.path.dirname(__file__)
 sys.path.insert(1, os.path.join(crntPath))
 
 # Definition
+
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.MINTY],
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=0.8, maximum-scale=1.3, minimum-scale=0.5,'}],
 
                 )
 server = app.server
+server.secret_key = os.environ.get('secret_key', str(randint(0, 1000000)))
 
 app.title = "Hawzen"
 app.config.suppress_callback_exceptions = True
